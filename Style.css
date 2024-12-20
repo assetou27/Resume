@@ -1,0 +1,103 @@
+body{
+    background-color: hsl(0, 23%, 91%); margin: 10%;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;/* Permet de créer deux colonnes */
+    flex-wrap: wrap;/* S'assure que les colonnes s'ajustent si l'écran est petit */
+    flex-direction: column; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+
+}
+
+/* Conteneur principal des colonnes */
+.container {
+    display: flex; /* Active Flexbox pour aligner les deux colonnes */
+    align-items: flex-start; /* Aligne les colonnes en haut */
+    gap: 100px;
+    justify-content: space-between;
+    width: 100%;} /* Prend toute la largeur disponible */
+    
+
+
+
+.left-column{
+    flex: 1; /* Prend une part de l'espace disponible */
+    max-width: 25%;/* Limite la largeur à 45% */
+    flex-wrap: wrap;
+}
+
+.left-column img {
+    display: block; /* Transforme l'image en un bloc */
+    margin: 20px;
+    width: 200px; /* Taille de l'image */
+    border-radius: 50%; /* Arrondit les bords de l'image */}
+   
+ .right-column{
+        flex: 1.5;
+        flex-direction: column;
+        max-width: 65%;
+        margin-top: 277px;
+        margin-left: 3%;
+    }
+
+h1{ text-align: right;
+    color: #070e16;
+    font-size: 2.5em;
+}
+.header {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    width: 100%;
+}
+
+h3{
+    font-size: 1.8em;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0056b3;/* Ligne bleue sous le sous-titre */
+    padding-bottom: 5px;
+    background-color: #0bbbebeb;
+    color: whitesmoke;
+    text-align: center;
+}
+/*Style pour les paragraphe*/
+p{
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 0;
+    padding: 0;
+}
+ul{
+    margin-left: 0px;
+    list-style-type: disc;
+}
+
+/* Supprime les puces et l'indentation pour la liste des contacts */
+.contact-list {
+    list-style-type: none; /* Supprime les puces */
+    padding-left: 0; /* Supprime l'indentation à gauche */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Style pour chaque élément de la liste */
+.contact-list li {
+    margin-bottom: 1px; /* Ajoute un espacement entre chaque élément */
+    display: flex; /* Aligne les icônes et le texte sur une même ligne */
+    align-items: center; /* Centre verticalement les icônes avec le texte */
+}
+
+li{margin-bottom: 1%;}
+
+a{color: #0056b3;
+    text-decoration: none;/*supprime le soulignement*/
+}
+a:hover{
+    text-decoration: underline;/*ajoute un soulignement au survol*/
+}
+.title{
+    font-weight: bold;
+}
